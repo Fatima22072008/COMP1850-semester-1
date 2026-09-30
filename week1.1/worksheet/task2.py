@@ -13,7 +13,7 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 
 monthly_savings = int(input(" What is the amount you want to save every month in pounds?"))
 if type(monthly_savings) != int:
-    print("please enter an interger / number")
+    print("Invalid Amount")
 else:
     print("valid input")
 
