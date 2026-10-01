@@ -9,6 +9,8 @@ destination = input("Where are you going to? ")
 
 distance_miles_input = int(input("How many miles will you travel? "))
 time_hours_input = int(input("How many hours will the journey take? "))
+
+
 speed = 0
 try:
     speed = distance_miles_input / time_hours_input
