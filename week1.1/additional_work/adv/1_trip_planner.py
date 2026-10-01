@@ -7,9 +7,18 @@
 
 destination = input("Where are you going to? ")
 
-distance_miles_input = input("How many miles will you travel? ")
-time_hours_input = input("How many hours will the journey take? ")
+distance_miles_input = int(input("How many miles will you travel? "))
+time_hours_input = int(input("How many hours will the journey take? "))
+speed = 0
+try:
+    speed = distance_miles_input / time_hours_input
+    print(f"You are travelling to {destination} and your speed will be {speed:.2f}")
+except:
+    print("invalid")
 
+
+
+    
 # TODO: convert distance_miles_input and time_hours_input to numbers
 # TODO: calculate the average speed in miles per hour
 # TODO: print a summary message using an f-string
