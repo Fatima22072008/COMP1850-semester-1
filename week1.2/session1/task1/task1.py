@@ -10,11 +10,16 @@ print(shopping)
 shopping.append("bananas")
 print(shopping)
 
+
+
 # We bought something, so remove it from list
 
 shopping.remove("eggs")
 print(shopping)
 
 # Replace bananas with grapes
-
+shopping[3] = "grapes"
 # Add yoghurt, just after milk
+shopping.insert(0, "yoghurt")
+
+print(shopping)

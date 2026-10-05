@@ -3,7 +3,8 @@
 fruit = ["cherry", "strawberry", "melon", "grape", "apple"]
 
 # Sort list
-
+fruit.sort()
+print(fruit)
 # Reverse order of list items
 
 # Remove all items
