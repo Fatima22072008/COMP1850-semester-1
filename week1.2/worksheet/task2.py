@@ -17,6 +17,7 @@ numbersMean = numbersSum / numbersLength
 
 numbersMod = numbersLength // 2
 numbersOddEven = numbersLength / 2
+
 if numbersMod == 1 and numbersLength == 2:
     numbersMedian = (minNumbers + maxNumbers) / 2
 elif numbersMod == 1:
@@ -24,7 +25,7 @@ elif numbersMod == 1:
 else:
     Median1 = numbers[numbersMod]
     Median2 = numbers[numbersMod - 1]
-    numbersMedian = (Median1 + Median2) // 2
+    numbersMedian = (Median1 + Median2) / 2
 
 print(f"Minimum = {minNumbers}")
 print(f"Maximum = {maxNumbers}")
