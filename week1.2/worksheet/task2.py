@@ -16,13 +16,13 @@ numbersLength = len(numbers)
 numbersMean = numbersSum / numbersLength
 
 numbersMod = numbersLength // 2
-print(numbersMod)
-if numbersMod >= 1:
+numbersOddEven = numbersLength / 2
+if numbersMod == 1:
+    numbersMedian = numbers[numbersMod]
+else:
     Median1 = numbers[numbersMod]
     Median2 = numbers[numbersMod - 1]
     numbersMedian = (Median1 + Median2) / 2
-else:
-    numbersMedian = numbers[numbersMod]
 
 print(f"Minimum = {minNumbers}")
 print(f"Maximum = {maxNumbers}")
