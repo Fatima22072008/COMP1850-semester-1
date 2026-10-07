@@ -7,13 +7,20 @@ try:
 except:
     sys.exit("Error: no numbers provided")
 
+numbersLength = len(numbers)
+
+if numbersLength == 0:
+    sys.exit("Error: no numbers provided")
+else:
+    print("")
+    
+numbersSum = sum(numbers)
+numbersMean = numbersSum / numbersLength
 sortNumbers = numbers.sort()
 minNumbers = min(numbers)
 maxNumbers = max(numbers)
 
-numbersSum = sum(numbers)
-numbersLength = len(numbers)
-numbersMean = numbersSum / numbersLength
+
 
 numbersMod = numbersLength // 2
 numbersOddEven = numbersLength / 2
