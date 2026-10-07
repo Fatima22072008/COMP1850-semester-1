@@ -9,5 +9,9 @@ elif numberUser >= 40 and numberUser <= 69:
     print(f"{numberUser} is a Pass")
 elif numberUser >= 0 and numberUser <= 39:
     print(f"{numberUser} is a Fail")
+elif numberUser > 100:
+    sys.exit("Error: Grade must be an interger between 0 and 100")
+elif numberUser < 0:
+    sys.exit("Error: Grade must be an interger between 0 and 100")
 else:
     sys.exit("Error: Grade must be an interger between 0 and 100")
