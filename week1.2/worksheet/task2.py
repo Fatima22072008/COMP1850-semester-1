@@ -5,7 +5,7 @@ import sys
 try:
     numbers = read_numbers()
 except:
-    sys.exit("Error!")
+    sys.exit("Error: no numbers provided")
 
 sortNumbers = numbers.sort()
 minNumbers = min(numbers)
