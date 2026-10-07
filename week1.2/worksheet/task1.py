@@ -2,7 +2,7 @@
 import sys
 numberUser = int(input("enter your grade"))
 
-print("numberdecimal")
+print("numberUser")
 if numberUser >= 70 and numberUser <= 100:
     print("Distinction")
 elif numberUser >= 40 and numberUser <= 69:
