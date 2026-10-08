@@ -18,7 +18,7 @@ password = input("Enter your password: ")
 if username == correct_username:
     if password == correct_password:
         two_factor_code = input("Enter the 2FA code sent to your device: ")
-        if XXX:
+        if two_factor_enabled == correct_2fa_code:
             print("Login successful! Welcome!")
         else:
             print("Invalid two-factor authentication code. Access denied.")
