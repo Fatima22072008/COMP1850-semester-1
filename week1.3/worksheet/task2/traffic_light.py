@@ -8,11 +8,6 @@ states = { "red":4, "red_amber":3, "green":5, "amber":3 }
 
 systime = 0
 maxtime = int(input())  # read an integer number of steps (>0)
-if maxtime > 0:
-    numberSteps = maxtime
-    state = "red"
-else:
-    print("error")
 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
 while systime <= 39:
