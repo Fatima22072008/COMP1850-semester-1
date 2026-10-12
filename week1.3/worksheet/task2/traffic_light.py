@@ -21,11 +21,28 @@ for systime in range(41):
         states = "green"
         print(f"Time {systime:03} State {states}")
     elif systime >= 12 and systime < 15:
-            states = "amber"
-            print(f"Time {systime:03} State {states}")
+        states = "amber"
+        print(f"Time {systime:03} State {states}")
     elif systime >= 15 and systime < 19:
-            states = "red"
-            print(f"Time {systime:03} State {states}")
-
+        states = "red"
+        print(f"Time {systime:03} State {states}")
+    elif systime >= 19 and systime < 21:
+        states = "red_amber"
+        print(f"Time {systime:03} State {states}")
+    elif systime >= 21 and systime < 26:
+        states = "green"
+        print(f"Time {systime:03} State {states}")
+    elif systime >= 26 and systime < 29:
+        states = "amber"
+        print(f"Time {systime:03} State {states}")
+    elif systime >= 29 and systime < 33:
+        states = "red"
+        print(f"Time {systime:03} State {states}")
+    elif systime >= 33 and systime < 36:
+        states = "red_amber"
+        print(f"Time {systime:03} State {states}")
+    elif systime >= 36 and systime < 41:
+        states = "green"
+        print(f"Time {systime:03} State {states}")
 
 # At the end of each step you should output the time and state using the statement on line 14
