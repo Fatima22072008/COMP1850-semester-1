@@ -1,8 +1,9 @@
 # Week 1.3, Session 1: Task 5a
 
 course = "computer science"
-
-for ch in course:
+courseList = list(course)
+courseList.sort()
+for ch in courseList:
 	print(ch)
 
 
