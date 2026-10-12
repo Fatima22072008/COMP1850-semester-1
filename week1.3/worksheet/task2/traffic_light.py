@@ -16,7 +16,9 @@ else:
     print("error")
 
 # Simulate the traffic light system up to time=maxtime in 1-second steps
-
+while systime <= 39:
+    systime = systime + 1
+    
 
 for i in states.keys():
      while i == "red" and systime < states["red"] and systime <= maxtime:
