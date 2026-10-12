@@ -20,7 +20,6 @@ for i in states.keys():
         systime = systime + 1
     else:
         break
-    
 for k in states.values():
     print(k)
 
