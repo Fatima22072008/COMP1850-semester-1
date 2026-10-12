@@ -20,5 +20,12 @@ for systime in range(41):
     elif systime >= 7 and systime < 12:
         states = "green"
         print(f"Time {systime:03} State {states}")
+    elif systime >= 12 and systime < 15:
+            states = "amber"
+            print(f"Time {systime:03} State {states}")
+    elif systime >= 15 and systime < 19:
+            states = "red"
+            print(f"Time {systime:03} State {states}")
+
 
 # At the end of each step you should output the time and state using the statement on line 14
