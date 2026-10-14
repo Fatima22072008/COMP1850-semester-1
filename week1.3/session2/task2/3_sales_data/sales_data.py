@@ -5,8 +5,10 @@
 # Open the file and read the data
 
 with open("sales.csv", "r") as infile:
-    fileRead = infile.read()
-    
+    for line in infile:
+        print(line)
+
+data = [line.strip().split(",") for line in infile]
 # find the:
 #   - largest sale day (highest sale amount)
 #   - average sale amount
