@@ -26,22 +26,22 @@ for systime in range(41):
     elif systime >= 15 and systime < 19:
         states = "red"
         print(f"Time {systime:03} State {states}")
-    elif systime >= 19 and systime < 21:
+    elif systime >= 19 and systime < 22:
         states = "red_amber"
         print(f"Time {systime:03} State {states}")
-    elif systime >= 21 and systime < 26:
+    elif systime >= 22 and systime < 27:
         states = "green"
         print(f"Time {systime:03} State {states}")
-    elif systime >= 26 and systime < 29:
+    elif systime >= 27 and systime < 30:
         states = "amber"
         print(f"Time {systime:03} State {states}")
-    elif systime >= 29 and systime < 33:
+    elif systime >= 30 and systime < 34:
         states = "red"
         print(f"Time {systime:03} State {states}")
-    elif systime >= 33 and systime < 36:
+    elif systime >= 34 and systime < 37:
         states = "red_amber"
         print(f"Time {systime:03} State {states}")
-    elif systime >= 36 and systime < 41:
+    elif systime >= 37 and systime < 41:
         states = "green"
         print(f"Time {systime:03} State {states}")
 
