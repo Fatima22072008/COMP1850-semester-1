@@ -2,7 +2,10 @@
 
 # Open a pgm image
 # You could handle file errors with try/except
-
+with open("", "r") as infile:
+    readFile = infile.read()
+    condensedFile = readFile.split()
+    width = condensedFile[1]
 # Read the file content
 
 # Store the width, the height, and the maximum gray value

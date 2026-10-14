@@ -4,8 +4,12 @@
 # hint: skip the header row with data[1:]
 
 with open("student_data.csv", "r") as infile:
-    readFile = infile.read(infile[1:])
-    for x in infile:
+    readFile = infile.read()
+    condensedDate = readFile.split()
+    condensedDate = condensedDate[1:]
+    for x in condensedDate:
+        print(x)
+        maths = int(condensedDate[3])
         
 
 # Read each student's grades and calculate their average grade
