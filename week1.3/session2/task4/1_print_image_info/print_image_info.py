@@ -4,6 +4,9 @@
 # You can use the relative path ../images/filename
 # You could handle file errors with try/except.
 
+with open("print_image_info.py", "r") as infile:
+    readFile = infile.read()
+    
 # Read the file content
 
 # print image dimension (i.e., Dimensions: width x height pixels)
