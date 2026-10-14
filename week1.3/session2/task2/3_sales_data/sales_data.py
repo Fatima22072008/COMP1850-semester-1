@@ -3,6 +3,10 @@
 # We want to analyse a set of sales data in sales.csv
 
 # Open the file and read the data
+
+with open("sales.csv", "r") as infile:
+    fileRead = infile.read()
+    
 # find the:
 #   - largest sale day (highest sale amount)
 #   - average sale amount
