@@ -26,7 +26,7 @@ def currency_converter(amount, from_currency, to_currency):
 amount = int(input("enter the number you want converted"))
 from_currency = input("enter the currency code of your ammount")
 to_currency = input("the currency code of currency you want to conver to")
-
+ConvertedAmount = 0
 # Submit only this file currency_converter.py with the completed function.
 
 # for from_currency in conversion_rate:
