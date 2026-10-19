@@ -26,8 +26,8 @@ amount = float(input("enter a vlaue"))
 from_currency = input("enter the currency code of your ammount")
 to_currency = input("the currency code of currency you want to conver to")
 dictionary = currency_converter(amount, from_currency, to_currency)
-ConvertedAmount =  amount * (dictionary[from_currency][to_currency])
-print(ConvertedAmount)
+print(f"{amount * (dictionary[from_currency][to_currency]):.2f}")
+
 
 # Submit only this file currency_converter.py with the completed function.
 
