@@ -22,7 +22,7 @@ def currency_converter(amount, from_currency, to_currency):
     return conversion_rate
 
 
-amount = int(input())
+amount = float(input("enter a vlaue"))
 from_currency = input("enter the currency code of your ammount")
 to_currency = input("the currency code of currency you want to conver to")
 dictionary = currency_converter(amount, from_currency, to_currency)
