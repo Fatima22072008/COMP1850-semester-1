@@ -11,22 +11,24 @@
 
 def currency_converter(amount, from_currency, to_currency):
 
-
-    ConvertedAmount = 0
     conversion_rate = {
         'GBP': {'CNY': 9.24, 'PHP': 75.00, 'INR': 109.06},
         'CNY': {'GBP': 0.11, 'PHP': 8.12, 'INR': 11.81},
         'PHP': {'CNY': 0.12, 'GBP': 0.01, 'INR': 1.45},
         'INR': {'PHP': 0.69, 'CNY': 0.09, 'GBP': 0.01}
     }
-
+    
     # your code here
-    return ConvertedAmount
+    return conversion_rate
+
 
 amount = int(input("enter the number you want converted"))
 from_currency = input("enter the currency code of your ammount")
 to_currency = input("the currency code of currency you want to conver to")
-ConvertedAmount = 0
+dictionary = currency_converter(amount, from_currency, to_currency)
+ConvertedAmount =  amount * (dictionary[from_currency][to_currency])
+print(f"{ConvertedAmount:.2f}")
+
 # Submit only this file currency_converter.py with the completed function.
 
 # for from_currency in conversion_rate:
