@@ -21,17 +21,17 @@ def currency_converter(amount, from_currency, to_currency):
     # your code here
     return conversion_rate
 
-
-amount = float(input("enter a vlaue"))
-from_currency = input("enter the currency code of your ammount")
-to_currency = input("the currency code of currency you want to conver to")
+amount = float(input())
+from_currency = input()
+to_currency = input()
 dictionary = currency_converter(amount, from_currency, to_currency)
 print(f"{amount * (dictionary[from_currency][to_currency]):.2f}")
 
 
-# Submit only this file currency_converter.py with the completed function.
 
-# for from_currency in conversion_rate:
-      #  values = to_currency.get()
-      #  ConvertedAmount = amount * values
+
+
+
+
+# Submit only this file currency_converter.py with the completed function.
 # Remove any additional code you may have added during development and testing.
