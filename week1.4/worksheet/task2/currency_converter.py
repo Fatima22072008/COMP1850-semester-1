@@ -19,13 +19,14 @@ def currency_converter(amount, from_currency, to_currency):
     }
     
     # your code here
+    dictionary = currency_converter(amount, from_currency, to_currency)
+    print(f"{amount * (dictionary[from_currency][to_currency]):.2f}")
     return conversion_rate
 
-amount = float(input())
-from_currency = input()
-to_currency = input()
-dictionary = currency_converter(amount, from_currency, to_currency)
-print(f"{amount * (dictionary[from_currency][to_currency]):.2f}")
+#amount = float(input())
+#from_currency = input()
+#to_currency = input()
+
 
 
 
