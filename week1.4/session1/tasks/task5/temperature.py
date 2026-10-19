@@ -30,4 +30,9 @@ def celsius_to_fahrenheit(celsius):
 
 celsius = float(input("Enter temperature in Celsius: "))
 
+if valid_temperature(celsius) == True:
+    print(celsius_to_fahrenheit(celsius))
+else:
+    print("your temp isnt real")
+
 # Complete the rest of the code here

@@ -29,10 +29,13 @@ print(mystery_func("The quick Brown Fox!"))
 print(mystery_func("012345"))
 print(mystery_func("ABC"))
 
+"""
+this function count the number of lower and uper case letters in a string and prdocues 0 if its an interger
+"""
 
 # Can you predict the output of the following lines of code?
 # Uncomment the lines of code one by one and run the program
 # to see if you are right?
 
-# print(mystery_func("X"))
-# print(mystery_func("[2, 3]"))
+print(mystery_func("X"))
+print(mystery_func("[2, 3]"))
