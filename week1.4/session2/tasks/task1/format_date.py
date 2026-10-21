@@ -8,7 +8,7 @@
 
 def format_data(day, month, year, separator):
     # complete your code here
-    
+    formatted_date = print(day, seperator='-', month, seperator='-', year, seperator='-')
     return formatted_date
 
 # Write code to test the function with separators such as "/", ":", "."
