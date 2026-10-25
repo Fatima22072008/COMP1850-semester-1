@@ -6,7 +6,7 @@
 """
 
 minutes_remaining_input = input("Minutes remaining until the deadline: ")
-
+days_remaining = minutes_remaining_input / (24 * 60 * 60)
 # TODO: convert the input to an integer
 # TODO: calculate whole days, leftover hours, and remaining minutes
 # TODO: print the breakdown using f-strings
