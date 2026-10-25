@@ -19,9 +19,14 @@ def digits_sum(number):
     """
     # complete your code here
     # base case
-
+    digits_sum = 0
+    if number < 0:
+        return "not a positive number"
+    
     # recursive case
-
+    digits_sum = len(number)
+    for x in digits_sum:
+        print(x)
 
 # check if correct output is produced
 print(digits_sum(987))  # Output: 24
