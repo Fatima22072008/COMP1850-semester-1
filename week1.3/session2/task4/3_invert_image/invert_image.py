@@ -4,12 +4,17 @@
 # You can use the relative path ../images/filename
 # You could handle file errors with try/except
 
-with open("feep.pgm", "r") as infile:
+with open("../images/feep.pgm", "r") as infile:
     readfile = infile.read()
-    dimensions = readfile.split()
-    width = dimensions[1]
-    height = dimensions[2]
-    greyValue = dimensions[3]
+    value = readfile.split()
+    width = value[1]
+    height = value[2]
+    max_greyValue = int(max(value[3]))
+    for x in value:
+        original_pixel_value = x
+    invert_pixel_value = max_greyValue - int(original_pixel_value)
+    print(invert_pixel_value)
+
 # Create inverted image
 # the formula: invert_pixel_value = max_gray - original_pixel_value
 

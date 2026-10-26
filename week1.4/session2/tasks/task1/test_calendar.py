@@ -9,10 +9,13 @@ import calendar
 
 # For example, the following code prints the calendar month for October 2025.
 # Run the program and observe the output.
-def calendar_styles(w,l, c, m):
-
+def calendar_styles(theyear, w=2, l=1, c=6, m=3):
+    """
+    this returns the entire year as a multi line sting
+    """
     
     print(calendar.month(2025, 10))
+    return calendar_styles
 
 # Your task is to go to https://docs.python.org/3/library/calendar.html,
 # and have a look at other optional arguments for the month function,

@@ -8,7 +8,7 @@ def readPGM( filename ):
     Output: tuple of PGM image data
     '''
 
-    with open(filename,"r") as f:    # read in the file
+    with open(filename, "r") as f:    # read in the file
         data = f.readlines()
         
     data = [line.strip().split() for line in data[1:]] # clean the space-separated data, skip the first line
@@ -27,7 +27,8 @@ def writePGM( filename, image ):
     Output: None
     '''
     width,height,max_gray,pixels = image  # unpack the tuple
-
+    with open(filename, "w") as infile:
+        infile.write("P2")
     # open a file for writing
     # write the data in PGM format
     # don't forget the PGM code "P2"

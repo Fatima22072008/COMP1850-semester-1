@@ -16,11 +16,16 @@ def most_frequent_string(votes):
         and int is the count of its occurences
         - None, None: if votes is empty.
     """
-    
+    MaxString = 0
     # Your task is to complete the body of the function based on the details in the docstring.
     # Hint 1: You can complete this task with for loops or comprehensions 
     # Hint 2: Think about the properties of the various collection-types
+    for x in votes:
+       SplitValues = x.strip()
+       MaxString = MaxString[x] + 1
 
+    return MaxString
+        
 
 fruit = ['date', 'apple', 'cherry', 'date', 'apple', 'apple', 'elderberry',
          'date', 'elderberry', 'elderberry', 'date', 'banana']

@@ -7,8 +7,10 @@
 def power(x, n):
     # complete your code here
     # base case
-
+    if n == 0:
+        return 2
     # recursive case
-
+    return (x ** (n))
 
 # Once completed, make at least two function calls to test the power function
+print(power(2, 2))
