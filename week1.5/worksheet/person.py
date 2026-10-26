@@ -9,6 +9,17 @@ class Person:
 
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details)
+    def __init__(self, name, birth):
+
+        self.name = name
+        self.birth = birth 
 
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
+
+    def is_birthday(self):
+
+        if self.birth == date.today():
+            return True
+        else:
+            return False

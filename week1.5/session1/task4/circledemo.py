@@ -1,5 +1,6 @@
 # Week 1.5, Session 1: Task 4
 
+import geometry
 # Add one or more import statements here to give this program
 # access to the Point and Circle classes defined in geometry.py
 
