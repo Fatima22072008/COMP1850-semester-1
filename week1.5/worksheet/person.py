@@ -26,9 +26,11 @@ class Person:
     # (see README.md for further details)
     def initials(self):
 
-        NameSeperated = self.name.split()
-        for values in NameSeperated:
+        NameSeperatedValues = self.name.split()
+
+        for values in NameSeperatedValues:
             NameInitials += values[0]
+            
         return NameInitials.upper()
     
     def is_birthday(self):
