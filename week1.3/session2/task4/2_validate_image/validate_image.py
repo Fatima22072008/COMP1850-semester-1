@@ -11,7 +11,7 @@ with open("invalid_pixels.pgm", "r") as infile:
 
     for value in SplitFile:
         if value >= 0 and value <= Max_Grey_Value:
-
+            print("valid image")
 
 # Read the file content
 
