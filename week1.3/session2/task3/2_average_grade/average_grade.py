@@ -5,17 +5,21 @@
 
 with open("student_data.csv", "r") as infile:
     readFile = infile.read()
-    condensedDate = readFile.split()
-    condensedDate = condensedDate[1:]
-    for x in condensedDate:
+    value = readFile.split()
+    value = value[1:]
+    for x in value:
         print(x)
-        maths = int(condensedDate[3])
+        maths = int(value[3])
+        science = int(value[4])
+        history = int(value[5])
+        average = (maths + science + history)/3
         
 
 # Read each student's grades and calculate their average grade
 # hint: CSV data comes as strings, convert grade columns to int() for maths
 # hint: student_data.csv has columns: ID, Name, Mathematics, Science, History
 # hint: average = (maths + science + history) / 3
+ReportFile = open("report.txt")
 
 
 # Open a file called 'report.txt'
