@@ -12,11 +12,25 @@ class Person:
     def __init__(self, name, birth):
 
         self.name = name
+
+        if self.name == ' ':
+            raise ValueError
+        elif type(self.name) != str:
+            raise TypeError
+        
         self.birth = birth 
 
+        if type(self.birth) != date:
+            raise TypeError
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
+    def initials(self):
 
+        NameSeperated = self.name.split()
+        for values in NameSeperated:
+            NameInitials += values[0]
+        return NameInitials.upper()
+    
     def is_birthday(self):
 
         if self.birth == date.today():

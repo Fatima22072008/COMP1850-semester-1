@@ -11,8 +11,18 @@ class Rectangle:
         # Add code here to check type and value of provided width & height,
         # raising appropriate exceptions if necessary (see README.md)
         self.width = width
+
+        if self.width <= 0:
+            raise ValueError
+        elif type(self.width) != int:
+            raise TypeError
+        
         self.height = height
 
+        if self.height <= 0:
+            raise ValueError
+        elif type(self.height) != int:
+            raise TypeError
 
         # Implement methods is_square(), area() & perimeter() here
         # (See README.md for details of what they should do)
