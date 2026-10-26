@@ -2,10 +2,18 @@
 
 # Open a pgm image
 # You could handle file errors with try/except
-with open("", "r") as infile:
+with open("invalid_pixels.pgm", "r") as infile:
     readFile = infile.read()
-    condensedFile = readFile.split()
-    width = condensedFile[1]
+    SplitFile = readFile.split()
+    width = SplitFile[1]
+    height = SplitFile[2]
+    Max_Grey_Value = max(SplitFile[3])
+
+    for value in SplitFile:
+        if value >= 0 and value <= Max_Grey_Value:
+            valid = True
+
+
 # Read the file content
 
 # Store the width, the height, and the maximum gray value

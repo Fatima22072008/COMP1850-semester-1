@@ -19,7 +19,8 @@ with open("student_data.csv", "r") as infile:
 # hint: CSV data comes as strings, convert grade columns to int() for maths
 # hint: student_data.csv has columns: ID, Name, Mathematics, Science, History
 # hint: average = (maths + science + history) / 3
-ReportFile = open("report.txt")
+with open("report.txt", "w") as ReportFile:
+    ReportFile.write(value[2], average[6])
 
 
 # Open a file called 'report.txt'
