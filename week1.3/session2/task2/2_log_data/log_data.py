@@ -7,8 +7,8 @@
 
 # open and read the file
 with open ("site.log", "r") as infile:
-    for line in infile:
-        print(line)
+    if infile[Status_code] == '401':
+        print(infile[IP_Address])
 
 # find all failed login attempts (POST /login with the response 401)
 # and print these out in a human-readable format:
