@@ -31,9 +31,10 @@ class Person:
         this is for the initials and allows them to be split up into speerate strings then the first value is taken and then its put into uppercase
         """
         NameSeperatedValues = self.name.split()
-
+        NameInitials = ''
         for values in NameSeperatedValues:
-            NameInitials = values[0].upper()
+            NameInitials += values[0]
+            NameInitials = values.upper()
             
         return NameInitials
     
