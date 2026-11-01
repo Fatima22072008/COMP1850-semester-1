@@ -44,6 +44,8 @@ class Person:
          """
         today = date.fromtimestamp(time.time())
         if self.birth == date.today():
-            return True
+            birthday = True
         else:
-            return False
+            birthday = False
+
+        return birthday
