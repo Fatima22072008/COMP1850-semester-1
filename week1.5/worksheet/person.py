@@ -1,7 +1,7 @@
 # Worksheet 1.5: Person class
 
 from datetime import date
-import time
+
 class Person:
     """
     A Person, with a name and a date of birth.
@@ -42,10 +42,10 @@ class Person:
         """
         checks wether its their birhtday today
          """
-        today = date.fromtimestamp(time.time())
+
         if self.birth == date.today():
             birthday = True
         else:
             birthday = False
 
-        return birthday
+
