@@ -6,7 +6,7 @@ class Rectangle:
     """
     def __init__(self, width, height):
         """
-        Creates a Rectangle, given values for width and height.
+        Creates a Rectangle, given values for width and height..
         """
         # Add code here to check type and value of provided width & height,
         # raising appropriate exceptions if necessary (see README.md)
