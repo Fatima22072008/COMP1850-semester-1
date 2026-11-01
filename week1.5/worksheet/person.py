@@ -41,7 +41,7 @@ class Person:
         """
         checks wether its their birhtday today
          """
-        if self.birth == date.today():
+        if (self.birth).day == (date.today()).day and (self.birth).month == (date.today()).month:
             birthday = True
         else:
             birthday = False
