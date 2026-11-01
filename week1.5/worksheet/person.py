@@ -34,8 +34,9 @@ class Person:
 
         for values in NameSeperatedValues:
             NameInitials += values[0]
+            NameInitials = NameInitials.upper()
             
-        return NameInitials.upper()
+        return NameInitials
     
     def is_birthday(self):
         """
