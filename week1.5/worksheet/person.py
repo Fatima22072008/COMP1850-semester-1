@@ -33,8 +33,7 @@ class Person:
         NameSeperatedValues = self.name.split()
 
         for values in NameSeperatedValues:
-            NameInitials += values[0]
-            NameInitials = NameInitials.upper()
+            NameInitials = values[0].upper()
             
         return NameInitials
     
