@@ -33,6 +33,15 @@ class QuakeDataset:
 
         The new data replaces any existing data.
         """
+        self.data.clear()
+        for info in self.feed.reader():
+            time = datetime.fromisoformat(info['time'])
+            lon = float(info['longitude'])
+            lat = float(info['latitude'])
+            depth = float(info['depth'])
+            mag = float(info['mag'])
+            self.data.append(Quake(time, lon, lat, depth, mag))
+            
         # Write code here to replace existing data with new earthquake data.
         # Use the value returned by the feed's reader() method as the
         # subject of a for loop.
