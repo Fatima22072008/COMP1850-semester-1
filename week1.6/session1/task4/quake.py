@@ -9,7 +9,6 @@ class Quake:
     """
     Details of a single earthquake.
     """
-
     when: datetime
     longitude: float
     latitude: float
