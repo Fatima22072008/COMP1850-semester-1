@@ -16,6 +16,7 @@
 
 def valid_temperature(temperature):
     if temperature >= -100 and temperature <= 100:
+        # checks if temp is in valid range
         return True
     else:
         return False
@@ -23,6 +24,7 @@ def valid_temperature(temperature):
 
 def celsius_to_fahrenheit(celsius):
     fahrenheit = (celsius * 9/5) + 32
+    #  conversion of celsisu to farenheight 
     return fahrenheit
 
 

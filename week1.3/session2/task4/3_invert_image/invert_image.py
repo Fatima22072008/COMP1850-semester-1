@@ -10,10 +10,14 @@ with open("../images/feep.pgm", "r") as infile:
     width = value[1]
     height = value[2]
     max_greyValue = int(max(value[3]))
+
+ # this part above just sets all the values
+    
     for x in value:
         original_pixel_value = x
     invert_pixel_value = max_greyValue - int(original_pixel_value)
     print(invert_pixel_value)
+# this part here uses the formula to create and inverted image
 
 # Create inverted image
 # the formula: invert_pixel_value = max_gray - original_pixel_value

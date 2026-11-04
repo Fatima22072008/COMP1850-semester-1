@@ -19,3 +19,5 @@ age = int(input("Enter your age: "))
 check_vote_eligibility(age)
 
 # what is the return value from check_vote_eligibility? you are eligible to vote or ntoi eligible to vote
+
+#  returns a string wether user cant vote or can vote

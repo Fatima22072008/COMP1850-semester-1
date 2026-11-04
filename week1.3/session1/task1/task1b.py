@@ -9,4 +9,8 @@ while fruit:
 
 # Why does this work?
 
+# this works because it uses the LIFO structure so it just takes of the top value the most recently added feature 
+
 # What features of Python does it rely on?
+
+# it relies on data structures

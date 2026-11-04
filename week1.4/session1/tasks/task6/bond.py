@@ -11,21 +11,24 @@ def isBond(intList):
     otherwise. The numbers do not need to be consecutive, but must appear
     in the specified order.
     """
-    result = False
+    result = False #  sets the variable as false
+
     # pass is a Python keyword used as a placeholder for future code,
     # meaning you need to delete pass to write your code.
     # Nothing happens when pass is executed.
      # delete pass to write your code
 
     values = [num for num in intList if num == 0 or num == 7]
+    #  uses a for loop to search for where 0 or 7 is in the values
 
-    values_length = len(values)
+    values_length = len(values) #  sets the variable to the legnth of another variable
 
-    for i in range (0, values_length - 2):
+    for i in range (0, values_length - 2): 
         if values[i] == 0:
             if values[i+1] == 0:
                 if values[i+2] == 7:
                     result = True
+                    # here is a loop which basically looks thought if it contains 007 in that order 
     return result
 
     

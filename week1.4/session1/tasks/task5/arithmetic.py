@@ -5,23 +5,23 @@
 # complete the code for case 1 to case 4.
 
 
-def addition(num1, num2):
-    return num1 + num2
+def addition(num1, num2): # takes in the paragramers
+    return num1 + num2 # returns the additions togehter
 
 
 def subtraction(num1, num2):
-    return num1 - num2
+    return num1 - num2 #  returns the subtraction of the two
 
 
 def multiplication(num1, num2):
-    return num1 * num2
+    return num1 * num2 #  returns the multiplication of the two
 
 
 def division(num1, num2):
     if num2 == 0:
-        return "Error: cannot divide by zero"
+        return "Error: cannot divide by zero" 
     else:
-        return num1 / num2
+        return num1 / num2 #  returns the division of the 2 numbers
 
 
 def run_program():
@@ -29,6 +29,7 @@ def run_program():
     # Ask user for two numbers
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
+    #  allows the user to pass in the two paramers 
 
     # Ask user for the desired operation
     print("Select an operation:")
@@ -38,7 +39,7 @@ def run_program():
     print("4. Division (/)")
     operation = int(input("Enter your choice (1-4): "))
 
-    match operation:
+    match operation: #  case switch is used here to output the resutls based on what the user inputs so the user can input 1 for addition and get that output
         case 1:
             result = addition(num1, num2)    # complete this line of code
             print(f"The result of addition is: {result}")

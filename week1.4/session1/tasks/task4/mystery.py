@@ -13,13 +13,17 @@
 def mystery_func(string):
     upper = 0
     lower = 0
+    #  tests the variables as 0
 
     for ch in string:
         if ch.isupper():
             upper += 1
+            # increments the variable upper if the character is upper case
         if ch.islower():
             lower += 1
+            #  increments the variable for lower case if character is lowercase
     return (upper, lower)
+    #  returns the values of upper and lower
 
 
 # testing
