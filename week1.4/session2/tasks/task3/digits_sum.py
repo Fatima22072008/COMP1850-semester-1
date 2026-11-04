@@ -20,12 +20,12 @@ def digits_sum(number):
     # complete your code here
     # base case
     digits_sum = 0
-    if number < 0:
+    if number < 0: # checks if number is less then 0
         return "not a positive number"
     
     # recursive case
     digits_sum = len(number)
-    for x in digits_sum:
+    for x in digits_sum: # loops through
         print(x)
 
 # check if correct output is produced

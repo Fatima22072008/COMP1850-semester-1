@@ -1,7 +1,8 @@
 # A bad class implementation
 
-# What does the runtime error mean?
-# How do we fix the code?
+# What does the runtime error mean? its not being passed through the function
+
+# How do we fix the code? by using self
 
 class Point:
     """
@@ -16,6 +17,6 @@ class Point:
         self.y = y_coordinate
 
 
-p = Point(1.5, 2.0)
+p = Point(1.5, 2.0) # passes through the function
 print(p.x)
 print(p.y)

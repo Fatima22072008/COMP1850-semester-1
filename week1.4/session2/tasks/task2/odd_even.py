@@ -17,9 +17,13 @@ def odd_even(lstIntegers):
         list: A list containing [odd_count, even_count].
     """
     evens = 0
-    odds = 0
+    odds = 0 # sets the variables as equal to 0
     for values in lstIntegers:
-        if values % 2 == 0:
+        """
+            increments the evnens if their modlus of 2 prodces 0 as all even numbers are divisible by 2
+            otherwise increments odds
+            """
+        if values % 2 == 0: # does the modulus, anythin mod 2 produces 0 meaning its even 
             evens += 1
         else:
             odds += 1
