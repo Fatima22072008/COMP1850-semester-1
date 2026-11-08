@@ -15,7 +15,7 @@
 # Download your file, and upload it to the 'Week 1 Session 2 - Practice Upload' task on Minerva.
 # You will get some feedback - ensure you are passing the tests!
 
-try:
+try: # does what's indented within try fist but if it produces an error or doesnt meet the requirement it goes to except
     num1 = int(input("enter a number"))
     num2 = int(input("enter a number"))
     print(num1 * num2)

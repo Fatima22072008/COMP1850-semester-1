@@ -5,16 +5,16 @@
 - Extension: warn if either numeric value is zero or negative.
 """
 
-destination = input("Where are you going to? ")
+destination = input("Where are you going to? ") # takes an input from the users
 
-distance_miles_input = int(input("How many miles will you travel? "))
+distance_miles_input = int(input("How many miles will you travel? ")) #  casts the input as intergers
 time_hours_input = int(input("How many hours will the journey take? "))
 
 
-speed = 0
+speed = 0 #  sets this variable as zero
 try:
-    speed = distance_miles_input / time_hours_input
-    print(f"You are travelling to {destination} and your speed will be {speed:.2f}")
+    speed = distance_miles_input / time_hours_input 
+    print(f"You are travelling to {destination} and your speed will be {speed:.2f}") # round the speed to a certain number of intergers
 except:
     print("invalid")
 

@@ -7,7 +7,9 @@
 with open("_data/lateness_data.csv") as f: # allows us to open the file and call it a variable
     data = f.readlines() # allows us to read the file 
 
-data = [line.strip().split(",") for line in data] # strip goes through and gets rid of the empty space
+data = [line.strip().split(",") for line in data] 
+# strip goes through and gets rid of the empty space
+# split seperates the words 
 
 for row in data: # allows us to iterate
 
