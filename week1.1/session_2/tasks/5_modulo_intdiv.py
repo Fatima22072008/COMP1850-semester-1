@@ -1,14 +1,16 @@
-# this program takes a file which contains students IDs and the hours late that work was submitted
-# it needs to convert the minutes late into days, hours and minutes
-# all file handling has been done - the section you need to edit is marked by comments below
+"""
+    this program takes a file which contains students IDs and the hours late that work was submitted
+    it needs to convert the minutes late into days, hours and minutes
+    all file handling has been done - the section you need to edit is marked by comments below
+"""
 
-with open("_data/lateness_data.csv") as f:
-    data = f.readlines()
+with open("_data/lateness_data.csv") as f: # allows us to open the file and call it a variable
+    data = f.readlines() # allows us to read the file 
 
-data = [line.strip().split(",") for line in data]
+data = [line.strip().split(",") for line in data] # strip goes through and gets rid of the empty space
 
-for row in data:
-######### This is the section where you will need to make some changes #############
+for row in data: # allows us to iterate
+
 
 
     # minutes_late is the number of minutes late a submission was made
@@ -21,7 +23,9 @@ for row in data:
     days = 0
     hours = 0
     minutes = 0
-
+    """
+    here were calculating from days to hours to minutes 
+    """
     days = minutes_late // 1440
     minutes_late = minutes_late - (1440 * days)
     hours = minutes_late // 60
