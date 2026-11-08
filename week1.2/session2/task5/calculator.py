@@ -1,8 +1,9 @@
 # Week 1.2, Session 2: Task 5
 # Calculator
-
+"""
+this task essentially acts as a calculator and does the addition, subtraction, multiplicatio and divsion of two intergers
+"""
 # Ask user for two integers
-
 num1 = int(input("Enter the first integer: "))
 num2 = int(input("Enter the second integer: "))
 
@@ -15,22 +16,27 @@ print("3. Multiplication (*)")
 print("4. Division (/)")
 
 operation = int(input("Enter your choice (1-4): "))
-
 # Conditional block to perform the selected operation
+
 
 if operation == 1:
     result = num1 + num2
     print(f"The result of addition is: {result}")
+
 elif operation == 2:
     result = num1 - num2
     print(f"The result of subtraction is: {result}")
+
 elif operation == 3:
     result = num1 * num2
     print(f"The result of multiplication is: {result}")
+
 elif operation == 4:
+
     if operation == 3:
         result = num1 / num2
         print(f"The result of division is: {result}")
+
     else:
         print("Error: Cannot divide by zero.")
 else:

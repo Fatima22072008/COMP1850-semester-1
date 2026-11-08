@@ -1,15 +1,16 @@
 # Week 1.2, Session 2: Task 5
 # ATM Simulation
-
+"""
+This task is to code an ATM simulation using selection
+"""
 # Initial balance set to a fixed amount
-
 balance = 1000.0
 
 # Ask user for the desired transaction type
 
 print("Welcome to the ATM!")
 print("Select an option: ")
-print("1. Check Balance")
+print("1. Check Balance") # allows the user to select which option the want
 print("2. Deposit Money")
 print("3. Withdraw Money")
 option = int(input("Enter your option (1-3): "))
@@ -17,20 +18,25 @@ option = int(input("Enter your option (1-3): "))
 # Conditional block for ATM operations
 
 if option == 1 :
-    print(f"Your current balance is: £{balance:.2f}")
+    print(f"Your current balance is: £{balance:.2f}") # rounds the answer to a certain number of intergers
+
 elif option == 2:
     deposit_amount = float(input("Enter the amount to deposit: "))
     balance += deposit_amount
     print(f"You have deposited £{deposit_amount:.2f}")
     print(f"Your new balance is £{balance:.2f}")
+
 elif option == 3 :
     withdraw_amount = float(input("Enter the amount to withdraw: "))
     # Nested conditional for withdrawal
+
     if option == 2:
         balance -= withdraw_amount
         print(f"You have withdrawn £{withdraw_amount:.2f}")
         print(f"Your new balance is £{balance:.2f}")
+
     else:
         print("Insufficient funds.")
+
 else:
     print("Invalid option. Please try again.")

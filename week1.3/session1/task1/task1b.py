@@ -1,5 +1,7 @@
 # Week 1.3, Session 1: Task 1b
-
+"""
+in this task we use a while loop to loop through a list
+"""
 fruit = ['apple','pear','banana','orange']
 
 # loop through the list

@@ -1,5 +1,8 @@
 # Week 1.3, Session 1: Task 2a
+"""
 
+in this task we use while loop to do 2 multiplied by k while it'se less then 2000 which is a break statement
+"""
 k = 2
 while k < 2000:
     k = 2 * k 

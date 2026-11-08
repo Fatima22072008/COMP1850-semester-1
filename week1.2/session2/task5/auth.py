@@ -1,8 +1,14 @@
 # Week 1.2, Session 2: Task 5
 # Authentication
-
+"""
+this task authenticates someones login details
+"""
 # Predefined credentials
 
+"""
+this is what data would technically be stored in a database if it was a 
+real authetnication system
+"""
 correct_username = "user123"
 correct_password = "password456"
 two_factor_enabled = True
@@ -15,6 +21,10 @@ password = input("Enter your password: ")
 
 # Conditional block for login authentication
 
+"""
+here selection is used to check if the inputted data matches
+the data 'stored' and that the login details are valid
+"""
 if username == correct_username:
     if password == correct_password:
         two_factor_code = input("Enter the 2FA code sent to your device: ")

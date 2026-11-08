@@ -1,10 +1,12 @@
 # Week 1.3, Session 1: Task 1a
-
-i = 0
+"""
+In this tasks we use a while loop to print numbers up to and including 20
+"""
+i = 0 # setting the variable i as equal to 0
 
 while i < 21:
-	i = i + 1
-	if i % 4 == 0:
+	i = i + 1 # increments i by one
+	if i % 4 == 0: # does the modulus of values of i and then output the ones which are divisible by 4 with no remainders
 		print(i)
 # Modify the loop to print numbers up to and including 20
 

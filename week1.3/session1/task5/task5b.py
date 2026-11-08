@@ -1,4 +1,7 @@
 # Week 1.3, Session 1: Task 5b
+"""
+in this task we are looping through a dictionary using a for loop
+"""
 
 rivers = {
   "London": "Thames", 
@@ -11,8 +14,10 @@ rivers = {
 
 for c, r in rivers.items():
     print(c, r)
+
 for i in rivers.keys():
     print(i)
+    
 for k in rivers.values():
     print(k)
 

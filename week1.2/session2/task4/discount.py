@@ -9,6 +9,11 @@
 # Look at the discounts in the final_cost calculation to match these up,
 # and think about WHY they are in this order!
 
+"""
+this task create a till system which offers a range of dicounts based
+on the requirements listed above
+"""
+
 cost = int(input("Amount spent: "))
 is_member = input("Are you a member? (y/n): ").lower()
 is_student = input("Are you a student? (y/n): ").lower()

@@ -1,8 +1,10 @@
 # Week 1.2, Session 2: Task 4
 # Temperature Checker
 
+"""
+this tasks creates a temeprature checker which determines wether its hot, warm or cold outside
+"""
 # Prompt the user to enter the temperature in Celsius
-
 temperature = float(input("Enter the temperature in Celsius: "))
 
 # Use an if statement to check temperature conditions:

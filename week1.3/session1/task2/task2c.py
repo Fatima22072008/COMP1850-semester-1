@@ -2,7 +2,9 @@
 
 # open a named text file for reading using open() function
 # the `with` statement closes the file automatically as the block of code finishes executing
-
+"""
+in this task we will make use of with open in order to to acces a file
+"""
 with open('file_data.txt', 'r') as file:  
 
     while True:
@@ -20,6 +22,4 @@ with open('file_data.txt', 'r') as file:
 # We will study this in more detail later on, but in this case we read character by character
 # We use 'break' to exit the reading process at the end of the file.
 
-# Why do we use an infinite 'while True' loop for this process?
-
-# because the file could be really really long or have a really big amount of characters, so then doing while true would mean it would just continue to read each character until the file ends
+# Why do we use an infinite 'while True' loop for this process? because the file could be really really long or have a really big amount of characters, so then doing while true would mean it would just continue to read each character until the file ends
