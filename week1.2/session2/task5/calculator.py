@@ -19,7 +19,6 @@ print("4. Division (/)")
 operation = int(input("Enter your choice (1-4): "))
 # Conditional block to perform the selected operation
 
-
 if operation == 1:
     result = num1 + num2
     print(f"The result of addition is: {result}")
