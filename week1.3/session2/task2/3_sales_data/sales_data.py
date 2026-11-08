@@ -1,19 +1,21 @@
 # Week 1.3, Session 2: Sales Data Statistics
-
 # We want to analyse a set of sales data in sales.csv
-
+"""
+In this task we are reading through some data and outputinng the largest sale day, average sale amount, the widget which has been sold the most
+"""
 # Open the file and read the data
 
 with open("sales.csv", "r") as infile:
-    readFile = infile.read()
+    readFile = infile.read() # reads the data
 
+# sets the variables as eqaul to 0 / nothing
 product_date = ""
 product_widget = ""
 Sales_Amount = 0
 Units_Sold = 0
 Region = ""
 
-for line in readFile:
+for line in readFile: # reads the data line for line
     readFile = [line.strip().split(",")]
     readFile = readFile[1:]
 

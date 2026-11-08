@@ -3,7 +3,10 @@
 # Open a pgm image file to read
 # You can use the relative path ../images/filename
 # You could handle file errors with try/except
-
+"""
+this task inverts an image by taking pixel values and applying a calculation to it
+inverit it
+"""
 with open("../images/feep.pgm", "r") as infile:
     readfile = infile.read()
     value = readfile.split()

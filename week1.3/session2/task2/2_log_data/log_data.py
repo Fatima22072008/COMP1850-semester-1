@@ -3,7 +3,9 @@
 # We want to find all failed login attempts based on Request and Status code 
 # (i.e., POST /login with the response 401) in a log file and print these out in a
 # human-readable format.
-
+"""
+in this task we want to find any failed login attempts and output the request and satus code 
+"""
 
 # open and read the file
 with open ("site.log", "r") as infile:

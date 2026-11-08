@@ -2,11 +2,22 @@
 
 # Open a pgm image
 # You could handle file errors with try/except
+
+"""
+in this task we are gonna check if the heigh and width of an image are the same and that the 
+pixels are between 0 and the maximum grey value
+"""
 with open("invalid_pixels.pgm", "r") as infile:
+
+    # Read the file content
     readFile = infile.read()
     SplitFile = readFile.split()
+
+    # Store the width, the height, and the maximum gray value
     width = SplitFile[1]
     height = SplitFile[2]
+
+    # For each pixel, check if the pixel value is between 0 and the maximum gray value inclusive
     Max_Grey_Value = max(SplitFile[3])
 
     for value in SplitFile:
@@ -15,13 +26,6 @@ with open("invalid_pixels.pgm", "r") as infile:
         else:
             print("invalid image")
 
-# Read the file content
-
-# Store the width, the height, and the maximum gray value
-
-# For each pixel, check if the pixel value is between 0 and the maximum gray value inclusive
-
-# Check if the widths and heights are the same as specified
 
 # 4. Print the final verdit.
 #  Print `Valid image` if the widths, the heights are the same, and all pixel values between 0 and the maximum gray value inclusive

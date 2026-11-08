@@ -1,5 +1,7 @@
 # Week 1.3, Session 2: Write User Information to a File
-
+"""
+adds the users name, age and favourtie colour into a file
+"""
 
 # Prompt the user for their name, age, and favorite colour.
 while True:
@@ -8,9 +10,8 @@ while True:
     colour = input("enter your favourite colour")
 
 # Open a file called 'user_info.txt' for reading
-
     with open("user_info.txt", "a") as outfile:
-        outfile.write(name + "\n")
+        outfile.write(name + "\n") #  adds the data from the user and writes it into the file
         outfile.write(age + "\n")
         outfile.write(colour + "\n")
 
