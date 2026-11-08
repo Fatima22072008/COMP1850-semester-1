@@ -16,6 +16,10 @@
 
 def circle_area(radius, pi_value=3.14):  # assign a default value to pi_value
     # complete the code here
+    """
+    calculates the area of a circle using two paramaters the radius and a default
+    values of pi which then returns the area
+    """
     area = radius * pi_value # calculates the area
     return area
 

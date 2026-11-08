@@ -15,7 +15,7 @@ def filter_positive_numbers(numbers):
         numbers (list of int): A list of integers.
 
     Returns:
-        list of int: A list containing only the positive integers.
+        list of int: A list containing only the positive integers that are greater than 0.
     """
 
     return [num for num in numbers if num > 0]

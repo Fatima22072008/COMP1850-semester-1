@@ -1,5 +1,8 @@
 # Week 4, Session 2: Task 1
-
+"""
+In this task a default name is set within the function, then its outputted by the 
+function
+"""
 def greeting(name='Fatima'):
     # Your task is change the default name to your name and observe the output
     print(f'Good morning {name}')

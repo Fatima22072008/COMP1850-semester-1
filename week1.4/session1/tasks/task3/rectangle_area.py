@@ -1,6 +1,8 @@
 
 # function implementation
-
+"""
+this task calculate the area of a trinagle by taking into two inputs from the user and returning them
+"""
 def rectangle_area( ):  # define suitable input data
     length = int(input("enter the length"))
     width = int(input("enter the width")) 

@@ -3,7 +3,9 @@
 # Write a program here that creates two Money objects, prints them,
 # then adds them together and prints their sum
 # Week 1.5, Session 2: Task 3
-
+"""
+this outputs the money from money.py
+"""
 import money
 
 from money import Money

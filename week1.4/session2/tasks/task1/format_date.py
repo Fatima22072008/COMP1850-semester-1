@@ -5,6 +5,9 @@
 # value to be "-". The function returns the formatted date as a string
 # in the format day-month-year with the default separator.
 
+"""
+In this task the function takes in 4 paramaters and outputs them in a specified format as a string
+"""
 
 def format_data(day, month, year, separator="/"):
     # complete your code here

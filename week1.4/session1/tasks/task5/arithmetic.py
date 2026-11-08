@@ -3,7 +3,9 @@
 # There are 5 functions defined below, one for each arithmetic operation
 # and one for getting user inputs. Please inspect the code and then
 # complete the code for case 1 to case 4.
-
+"""
+in this task we have to code for the 4 different arithmatic cases
+"""
 
 def addition(num1, num2): # takes in the paragramers
     return num1 + num2 # returns the additions togehter

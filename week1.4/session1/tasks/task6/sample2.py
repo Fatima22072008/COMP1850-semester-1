@@ -3,7 +3,9 @@
 # You are given function add_two_numbers. Your task is to inspect the code,
 # and the run the program and observe the output.
 
-
+"""
+in this task two numbers are added together 
+"""
 def add_two_numbers(num1, num2): #  takes two parameters
     num1 = float(num1) #  sets it as a float
     num2 = float(num2)

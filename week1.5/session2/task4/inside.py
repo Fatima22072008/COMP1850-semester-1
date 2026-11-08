@@ -4,6 +4,10 @@
 # method that you implemented in the Circle class
 import geometry
 
+"""
+this allows the circle class from geometry.py to be implemented
+"""
+
 point = geometry.Point(1.0, 1.5)
 circle = geometry.Circle(2.7)
 if point in circle:

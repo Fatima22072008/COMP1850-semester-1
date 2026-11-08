@@ -1,5 +1,5 @@
 def blur(self, img.height, img.width):
-
+    
     self.img.height = img.height
     self.img.width = img.width
 

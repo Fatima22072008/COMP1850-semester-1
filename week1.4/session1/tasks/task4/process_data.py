@@ -7,7 +7,6 @@
 # Your task is to identify the incorrect line of code and
 # update the code to produce the correct output.
 
-
 def process_data(data):
     """
     Processes a list of integers and returns the sum of all values.
