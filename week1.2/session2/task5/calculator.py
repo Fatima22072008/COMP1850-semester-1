@@ -1,7 +1,8 @@
 # Week 1.2, Session 2: Task 5
 # Calculator
 """
-this task essentially acts as a calculator and does the addition, subtraction, multiplicatio and divsion of two intergers
+in this task, we are essentially creating a calculator which has addition, subtraction multiplication division.
+By taking in two inputs
 """
 # Ask user for two integers
 num1 = int(input("Enter the first integer: "))
