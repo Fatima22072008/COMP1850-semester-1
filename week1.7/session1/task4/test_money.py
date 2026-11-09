@@ -26,11 +26,19 @@ def test_add_invalid_type():
 def test_invalid_type_pence():
     # complete the test implementation for 
     # invalid type for pence
+
+    with pytest.raises(TypeError) as excinfo:
+        Money(1, 2.5)
+    assert str(excinfo.value) == "pence must be an interger"
     
 
 def test_invalid_value_pence():
     # complete the test implementation for 
     # invalid value for pence
+
+    with pytest.raises(ValueError) as excinfo:
+        Money(1, 100)
+    assert str(excinfo.value) == "pence must be in the range from 1-100"
     
 
 def test_valid_add():

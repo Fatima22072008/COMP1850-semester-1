@@ -4,6 +4,6 @@ Equivalent classes for `comfort_level()`
 
 | Comfort level | Values |
 | --- | --- |
-| COLD | |
-| HOT  | |
-| OK   | |
+| COLD |15.0 , 14.0|
+| HOT  |25.1 , 30.0|
+| OK   |15.1 , 25.0, 19.0|
