@@ -7,8 +7,8 @@ Name:
 # Ask the user to input an amount they want to save every month - this should be an integer.
 # Validate that they have entered an integer.
 
-name = input("What is your name? ")
-print(f"Welcome to LeedsBank's savings calculator {name}!")
+name1 = input("What is your name? ")
+print(f"Welcome to LeedsBank's savings calculator {name1}!")
 
 try:
     monthly_savings = int(input(" What is the amount you want to save every month in pounds?"))
