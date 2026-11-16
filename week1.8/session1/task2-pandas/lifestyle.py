@@ -10,8 +10,13 @@ data = pandas.read_csv("lifestyle_data.csv")
 # - Leave your code under the comments.
 
 # Find the total number of students
-
+print(len(data))
 # Find the mean average GPA of the students
+sum = 0
+for i in range (0, len(data)):
+    sum = sum + float(data("GPA").loc(data.index[i]))
+average = sum / len(data)
+print(average)
 
 # Find the standard deviation of how much sleep students get per day
 
