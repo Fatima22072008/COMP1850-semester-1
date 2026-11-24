@@ -11,7 +11,7 @@
 
 -- SELECT * FROM stations;
 
--- SELECT name FROM stations
--- WHERE capacity > 16;
+SELECT name FROM stations
+WHERE capacity < 12;
 
-SELECT * FROM bikes;
+-- SELECT * FROM bikes;
