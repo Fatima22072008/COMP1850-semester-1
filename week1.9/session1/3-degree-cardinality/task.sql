@@ -9,6 +9,8 @@
 
 -- To see the attributes belonging to each table
 .schema customers
+--7
 
 -- And to see a count of the total number of tuples
 SELECT COUNT(*) as Cardinality FROM customers; 
+--180

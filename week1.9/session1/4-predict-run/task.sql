@@ -2,5 +2,21 @@
 .mode column
 
 -- Write your sql for each task here - you can use comment (start with --) to add notes or number them. Remember your ; at the end of each query!
+
+--SELECT name FROM restaurants 
+--WHERE hygiene_rating = 5;
+-- 11 rows
+
 -- with multiple queries in the file, sql will run then one after the other and print them all out, so I recommend testing after each one.
 
+--SELECT name FROM restaurants
+--WHERE postcode LIKE 'LS6%';
+-- 8 rows
+
+--SELECT name FROM restaurants
+--WHERE cuisine = 'Italian';
+-- 4 rows
+
+--SELECT name FROM restaurants
+--WHERE cuisine = 'Italian' OR cuisine = 'Thai' AND hygiene_rating = 5;
+-- 5 rows
