@@ -25,3 +25,12 @@ DELETE FROM customers
 WHERE email LIKE '%@test.com';
 
 -- deleting duplicates from the table restaurants
+SELECT name, COUNT(*)
+FROM restaurants
+GROUP BY name
+HAVING COUNT(*) > 1;
+
+DELETE FROM restaurants
+WHERE restaurant_id = 99;
+
+
